@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore2.0_Web", "DotNetCore2.0_Web\DotNetCore2.0_Web.csproj", "{208F6770-F44C-45D6-9122-CF6C18221F0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore2.0_Web_Blank", "DotNetCore2.0_Web\DotNetCore2.0_Web_Blank.csproj", "{208F6770-F44C-45D6-9122-CF6C18221F0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
