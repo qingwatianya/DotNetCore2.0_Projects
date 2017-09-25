@@ -5,6 +5,18 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore2.0_Web_Blank", "DotNetCore2.0_Web\DotNetCore2.0_Web_Blank.csproj", "{208F6770-F44C-45D6-9122-CF6C18221F0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore2.0_Web_Application_MVC", "DotNetCore2.0_Web_Application_MVC\DotNetCore2.0_Web_Application_MVC.csproj", "{368D85DE-4695-4B34-AC96-2A01E519B465}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore2.0_Web_WebAPI", "DotNetCore2.0_Web_WebAPI\DotNetCore2.0_Web_WebAPI.csproj", "{9150BD2D-C350-4931-8503-7B330781C929}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore2.0_Web_Application", "DotNetCore2.0_Web_Application\DotNetCore2.0_Web_Application.csproj", "{F4926B34-87C1-4230-988E-2F07A9671004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore2.0_Web_Angular", "DotNetCore2.0_Web_Angular\DotNetCore2.0_Web_Angular.csproj", "{93006242-569B-486F-9601-BE0F715BB3FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore2.0_Web_ReactJS", "DotNetCore2.0_Web_ReactJS\DotNetCore2.0_Web_ReactJS.csproj", "{50503E16-7C0F-4CE5-92C2-9E2A0C3ACE33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore2.0_Web_React_Redux", "DotNetCore2.0_Web_React_Redux\DotNetCore2.0_Web_React_Redux.csproj", "{6F811EA1-9642-4A34-A7DF-7A30694DB870}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +27,30 @@ Global
 		{208F6770-F44C-45D6-9122-CF6C18221F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{208F6770-F44C-45D6-9122-CF6C18221F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{208F6770-F44C-45D6-9122-CF6C18221F0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{368D85DE-4695-4B34-AC96-2A01E519B465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{368D85DE-4695-4B34-AC96-2A01E519B465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{368D85DE-4695-4B34-AC96-2A01E519B465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{368D85DE-4695-4B34-AC96-2A01E519B465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9150BD2D-C350-4931-8503-7B330781C929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9150BD2D-C350-4931-8503-7B330781C929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9150BD2D-C350-4931-8503-7B330781C929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9150BD2D-C350-4931-8503-7B330781C929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4926B34-87C1-4230-988E-2F07A9671004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4926B34-87C1-4230-988E-2F07A9671004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4926B34-87C1-4230-988E-2F07A9671004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4926B34-87C1-4230-988E-2F07A9671004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93006242-569B-486F-9601-BE0F715BB3FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93006242-569B-486F-9601-BE0F715BB3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93006242-569B-486F-9601-BE0F715BB3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93006242-569B-486F-9601-BE0F715BB3FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50503E16-7C0F-4CE5-92C2-9E2A0C3ACE33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50503E16-7C0F-4CE5-92C2-9E2A0C3ACE33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50503E16-7C0F-4CE5-92C2-9E2A0C3ACE33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50503E16-7C0F-4CE5-92C2-9E2A0C3ACE33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F811EA1-9642-4A34-A7DF-7A30694DB870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F811EA1-9642-4A34-A7DF-7A30694DB870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F811EA1-9642-4A34-A7DF-7A30694DB870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F811EA1-9642-4A34-A7DF-7A30694DB870}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
