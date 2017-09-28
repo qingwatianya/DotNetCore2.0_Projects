@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  dotnetcore2.0_web_application_withdocker:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+networks:
+  default:
+    external:
+      name: nat
