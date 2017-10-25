@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="CrystalQuartz.Remote" Version="5.1.2-alpha" />
+    <PackageReference Include="Quartz" Version="3.0.0-beta1" />
+  </ItemGroup>
+
 </Project>

@@ -6,6 +6,8 @@ namespace DotNetCore2_Console_Application
     {
         static void Main(string[] args)
         {
+            //var serviceToRun = new ServiceBase[] { };
+
             Console.WriteLine("Hello World!");
         }
     }
