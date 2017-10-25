@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetFrameWork_WebApplicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFramework_WindowsService", "DotNetFramework_WindowsService\DotNetFramework_WindowsService.csproj", "{C966B501-2E60-4742-BA38-8617890D4756}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetStandardLibrary", "DotNetStandardLibrary\DotNetStandardLibrary.csproj", "{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Android = Debug|Android
@@ -443,6 +445,30 @@ Global
 		{C966B501-2E60-4742-BA38-8617890D4756}.Release|Windows-x64.Build.0 = Release|Any CPU
 		{C966B501-2E60-4742-BA38-8617890D4756}.Release|Windows-x86.ActiveCfg = Release|Any CPU
 		{C966B501-2E60-4742-BA38-8617890D4756}.Release|Windows-x86.Build.0 = Release|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Debug|Android.ActiveCfg = Debug|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Debug|Android.Build.0 = Debug|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Debug|iOS.ActiveCfg = Debug|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Debug|iOS.Build.0 = Debug|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Debug|Windows-ARM.ActiveCfg = Debug|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Debug|Windows-ARM.Build.0 = Debug|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Debug|Windows-x64.ActiveCfg = Debug|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Debug|Windows-x64.Build.0 = Debug|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Debug|Windows-x86.ActiveCfg = Debug|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Debug|Windows-x86.Build.0 = Debug|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Release|Android.ActiveCfg = Release|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Release|Android.Build.0 = Release|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Release|iOS.ActiveCfg = Release|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Release|iOS.Build.0 = Release|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Release|Windows-ARM.ActiveCfg = Release|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Release|Windows-ARM.Build.0 = Release|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Release|Windows-x64.ActiveCfg = Release|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Release|Windows-x64.Build.0 = Release|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Release|Windows-x86.ActiveCfg = Release|Any CPU
+		{3DC1AF1E-9104-4550-9F46-3DA6BD69FB4D}.Release|Windows-x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
