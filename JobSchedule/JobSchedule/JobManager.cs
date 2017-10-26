@@ -1,5 +1,6 @@
 ﻿using JobSchedule.FlashItemOffline;
 using JobSchedule.VoidUnPaidOrderJob;
+using NLog.Fluent;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,13 +21,15 @@ namespace JobSchedule
 
         protected override void OnStart(string[] args)
         {
-            //开启调度器
-             ScheduleBase.Scheduler.Start();
+           
 
             //把作业，触发器加入调度器
             ScheduleBase.AddSchedule(new AutoVoidUnPaidOrderService());
+            
+            //ScheduleBase.AddSchedule(new FlashItemOfflineJobService());
 
-            ScheduleBase.AddSchedule(new FlashItemOfflineJobService());
+            //开启调度器
+            ScheduleBase.Scheduler.Start();
         }
 
         protected override void OnStop()

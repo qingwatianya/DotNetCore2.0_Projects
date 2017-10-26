@@ -41,6 +41,12 @@
       <HintPath>..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="CrystalQuartz.Core, Version=5.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CrystalQuartz.Remote.5.1.2.0-alpha\lib\CrystalQuartz.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalQuartz.Web, Version=5.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CrystalQuartz.Remote.5.1.2.0-alpha\lib\CrystalQuartz.Web.dll</HintPath>
+    </Reference>
     <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
       <Private>True</Private>

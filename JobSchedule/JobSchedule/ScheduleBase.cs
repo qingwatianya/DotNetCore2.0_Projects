@@ -1,4 +1,5 @@
-﻿using Quartz;
+﻿using NLog.Fluent;
+using Quartz;
 using Quartz.Impl;
 using System;
 using System.Collections.Generic;
@@ -42,7 +43,7 @@ namespace JobSchedule
         }
 
         public static void AddSchedule<T>(JobService<T> service) where T : IJob
-        {
+        {            
             service.AddJobToSchedule(Scheduler);
         }
     }

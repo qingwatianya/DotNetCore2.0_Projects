@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Quartz;
+using NLog.Fluent;
 
 namespace JobSchedule.VoidUnPaidOrderJob
 {
@@ -27,6 +28,7 @@ namespace JobSchedule.VoidUnPaidOrderJob
 
         protected override ITrigger GetTrigger()
         {
+            
             var trigger = TriggerBuilder.Create()
               .WithIdentity("订单逾期未支付自动作废", "作业触发器") 
                .WithSimpleSchedule(x => x

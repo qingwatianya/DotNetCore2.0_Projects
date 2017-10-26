@@ -9,7 +9,7 @@ namespace JobSchedule.VoidUnPaidOrderJob
 
         public void Execute(IJobExecutionContext context)
         {
-            log.Info("超时自动作废订单Job开启--------------"); 
+            log.Info("超时自动作废订单Job开启--------------"+ context.Scheduler.SchedulerName); 
             try
             {
                 //var processData = VoidUnPaidOrderDBHelper.GetUnPaidOrder();
