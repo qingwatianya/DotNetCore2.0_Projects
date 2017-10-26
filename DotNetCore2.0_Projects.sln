@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore2_Console_Applica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore2_Web_Aplication_HangFire", "DotNetCore2_Web_Aplication_HangFire\DotNetCore2_Web_Aplication_HangFire.csproj", "{7D833C44-4B36-46E6-AF14-9785CB27BE7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFrameWork_WindowsService_HangFire", "DotNetFrameWork_WindowsService_HangFire\DotNetFrameWork_WindowsService_HangFire.csproj", "{5E9A9A85-1181-4569-A950-B4DD90C7E01E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Android = Debug|Android
@@ -599,6 +601,30 @@ Global
 		{7D833C44-4B36-46E6-AF14-9785CB27BE7D}.Release|Windows-x64.Build.0 = Release|Any CPU
 		{7D833C44-4B36-46E6-AF14-9785CB27BE7D}.Release|Windows-x86.ActiveCfg = Release|Any CPU
 		{7D833C44-4B36-46E6-AF14-9785CB27BE7D}.Release|Windows-x86.Build.0 = Release|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Debug|Android.ActiveCfg = Debug|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Debug|Android.Build.0 = Debug|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Debug|iOS.ActiveCfg = Debug|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Debug|iOS.Build.0 = Debug|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Debug|Windows-ARM.ActiveCfg = Debug|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Debug|Windows-ARM.Build.0 = Debug|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Debug|Windows-x64.ActiveCfg = Debug|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Debug|Windows-x64.Build.0 = Debug|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Debug|Windows-x86.ActiveCfg = Debug|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Debug|Windows-x86.Build.0 = Debug|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Android.ActiveCfg = Release|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Android.Build.0 = Release|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|iOS.ActiveCfg = Release|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|iOS.Build.0 = Release|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Windows-ARM.ActiveCfg = Release|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Windows-ARM.Build.0 = Release|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Windows-x64.ActiveCfg = Release|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Windows-x64.Build.0 = Release|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Windows-x86.ActiveCfg = Release|Any CPU
+		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Windows-x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
