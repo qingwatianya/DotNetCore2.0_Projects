@@ -2,9 +2,11 @@
 using Hangfire.MySql;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.ServiceProcess;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace DotNetFrameWork_WindowsService_HangFire
@@ -20,12 +22,10 @@ namespace DotNetFrameWork_WindowsService_HangFire
             ServicesToRun = new ServiceBase[]
             {
                 new JobManager()
-            };
-            using (System.IO.StreamWriter sw = new System.IO.StreamWriter("C:\\log11111111111112.txt", true))
-            {
-                sw.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss ") + "Start.");
-            }
+            }; 
+           
             ServiceBase.Run(ServicesToRun);
+            
         }
     }
 }

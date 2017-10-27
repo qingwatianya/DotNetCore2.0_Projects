@@ -43,11 +43,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSchedule", "JobSchedule\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetFrameWork_WebApplication", "DotnetFrameWork_WebApplication\DotnetFrameWork_WebApplication.csproj", "{C707118D-FA30-48B9-82DD-89698CCC805C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore2_Console_Application_HangFire", "DotNetCore2_Console_Application_HangFire\DotNetCore2_Console_Application_HangFire.csproj", "{2ED671ED-34C9-473D-8276-BAE172226B59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore2_Console_Application_HangFire", "DotNetCore2_Console_Application_HangFire\DotNetCore2_Console_Application_HangFire.csproj", "{2ED671ED-34C9-473D-8276-BAE172226B59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore2_Web_Aplication_HangFire", "DotNetCore2_Web_Aplication_HangFire\DotNetCore2_Web_Aplication_HangFire.csproj", "{7D833C44-4B36-46E6-AF14-9785CB27BE7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore2_Web_Aplication_HangFire", "DotNetCore2_Web_Aplication_HangFire\DotNetCore2_Web_Aplication_HangFire.csproj", "{7D833C44-4B36-46E6-AF14-9785CB27BE7D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFrameWork_WindowsService_HangFire", "DotNetFrameWork_WindowsService_HangFire\DotNetFrameWork_WindowsService_HangFire.csproj", "{5E9A9A85-1181-4569-A950-B4DD90C7E01E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{A33CFE01-2009-434C-830F-F891B7FD9BA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -625,6 +627,30 @@ Global
 		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Windows-x64.Build.0 = Release|Any CPU
 		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Windows-x86.ActiveCfg = Release|Any CPU
 		{5E9A9A85-1181-4569-A950-B4DD90C7E01E}.Release|Windows-x86.Build.0 = Release|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Debug|Android.ActiveCfg = Debug|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Debug|Android.Build.0 = Debug|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Debug|iOS.ActiveCfg = Debug|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Debug|iOS.Build.0 = Debug|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Debug|Windows-ARM.ActiveCfg = Debug|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Debug|Windows-ARM.Build.0 = Debug|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Debug|Windows-x64.ActiveCfg = Debug|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Debug|Windows-x64.Build.0 = Debug|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Debug|Windows-x86.ActiveCfg = Debug|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Debug|Windows-x86.Build.0 = Debug|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Release|Android.ActiveCfg = Release|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Release|Android.Build.0 = Release|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Release|iOS.ActiveCfg = Release|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Release|iOS.Build.0 = Release|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Release|Windows-ARM.ActiveCfg = Release|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Release|Windows-ARM.Build.0 = Release|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Release|Windows-x64.ActiveCfg = Release|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Release|Windows-x64.Build.0 = Release|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Release|Windows-x86.ActiveCfg = Release|Any CPU
+		{A33CFE01-2009-434C-830F-F891B7FD9BA1}.Release|Windows-x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

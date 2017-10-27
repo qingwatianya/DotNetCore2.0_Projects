@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Hangfire;
 using Hangfire.MySql.Core;
 using Hangfire.Dashboard;
+using Owin;
 
 namespace DotNetCore2_Web_Aplication_HangFire
 {
@@ -25,50 +26,15 @@ namespace DotNetCore2_Web_Aplication_HangFire
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHangfire(x => x.UseStorage(new MySqlStorage(tmpConnection)));
             services.AddMvc();
-        }
+        }              
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            //app.useh(config =>
-            //{
-            //    config.UseSqlServerStorage(@"Data Source=192.168.210.138;Initial Catalog=Hangfire;User ID=sa;Password=hotelrj");
-            //    config.UseServer();
-            //});
-
-            //        var options = new DashboardOptions
-            //        {
-            //            AppPath = HangfireSettings.Instance.AppWebSite,
-            //            AuthorizationFilters = new[]
-            //{
-            //    new BasicAuthAuthorizationFilter ( new BasicAuthAuthorizationFilterOptions
-            //    {
-            //        SslRedirect = false,
-            //        RequireSsl = false,
-            //        LoginCaseSensitive = true,
-            //        Users = new[]
-            //        {
-            //            new BasicAuthAuthorizationUser
-            //            {
-            //                Login = HangfireSettings.Instance.LoginUser,
-            //                // Password as plain text
-            //                PasswordClear = HangfireSettings.Instance.LoginPwd
-            //            }
-
-            //        }
-            //    } )
-            //}
-            //        };
-
-            GlobalConfiguration.Configuration
-                 .UseColouredConsoleLogProvider()
-                 .UseStorage(new MySqlStorage(tmpConnection));
-            //BackgroundJob.Enqueue(() => Console.WriteLine("HangFire start"));//初始化生成HangFire数据库表  
-            app.UseHangfireDashboard();
             app.UseHangfireServer();
-
-
+            app.UseHangfireDashboard();
 
             if (env.IsDevelopment())
             {
