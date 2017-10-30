@@ -1,4 +1,4 @@
-﻿
+
 using Hangfire;
 using Hangfire.MySql;
 using Hangfire.MySql.Core;
@@ -11,29 +11,36 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
+using System.Configuration;
+
 namespace DotNetFrameWork_WindowsService_HangFire
 {
     public partial class JobManager : ServiceBase
     {
+        public BackgroundJobServer _server;
         public JobManager()
         {
             InitializeComponent();
+            string tmpConnection = ConfigurationManager.ConnectionStrings["mysqlconnstr_mvctest"].ConnectionString;
+            //string tmpConnection="server=rds5n95035s53i40c6m5o.mysql.rds.aliyuncs.com;uid=qingwatianya;pwd=qingwatianya101674;database=mvctest;Allow User Variables=True";
+
+
+            GlobalConfiguration.Configuration.UseStorage(new MySqlStorage(tmpConnection));
         }
 
         protected override void OnStart(string[] args)
         {
-            string tmpConnection = "server=rds5n95035s53i40c6m5o.mysql.rds.aliyuncs.com;uid=qingwatianya;pwd=qingwatianya101674;database=mvctest;Allow User Variables=True";
-            GlobalConfiguration.Configuration.UseStorage(new MySqlStorage(tmpConnection));
+            
             try
             {
-                using (var server = new BackgroundJobServer())
-                {
+                _server = new BackgroundJobServer();
+                //using (var server = new BackgroundJobServer())
+                //{                    
+                //BackgroundJob.Enqueue(() => FFF());
 
-                    BackgroundJob.Enqueue(() => FFF());
+                RecurringJob.AddOrUpdate(() => Fuck(), Cron.Minutely());
 
-                    RecurringJob.AddOrUpdate(() => FFF(), Cron.Minutely());
-
-                }
+                //}
             }
             catch (Exception ex)
             {
@@ -70,7 +77,7 @@ namespace DotNetFrameWork_WindowsService_HangFire
 
         }
 
-        public void SSS()
+        public void Fuck()
         {
             string tmpConnection = "server=rds5n95035s53i40c6m5o.mysql.rds.aliyuncs.com;uid=qingwatianya;pwd=qingwatianya101674;database=mvctest;Allow User Variables=True";
             MySql.Data.MySqlClient.MySqlConnection ff = new MySql.Data.MySqlClient.MySqlConnection(tmpConnection);
