@@ -27,11 +27,11 @@ namespace DotNetCore2_Console_Application_HangFire
 
             using (var server = new BackgroundJobServer())
             {
-                //BackgroundJob.Enqueue(() => Dosomething());
-                var tmpJobID = BackgroundJob.Enqueue(() => Console.WriteLine("开始咯"));
-                tmpJobID = BackgroundJob.ContinueWith(tmpJobID, () => Console.WriteLine(string.Format("the parent job(ID:{0}) completed,turn to the child job！", tmpJobID)));
+                //    //BackgroundJob.Enqueue(() => Dosomething());
+                //    var tmpJobID = BackgroundJob.Enqueue(() => Console.WriteLine("开始咯"));
+                //    tmpJobID = BackgroundJob.ContinueWith(tmpJobID, () => Console.WriteLine(string.Format("the parent job(ID:{0}) completed,turn to the child job！", tmpJobID)));
 
-                RecurringJob.AddOrUpdate(() => Dosomething3(), Cron.Minutely());
+                RecurringJob.AddOrUpdate<Program>((Program) => Dosomething3(), Cron.Minutely());
                 //Console.WriteLine("Hangfire Server started. Press any key to exit...");
                 Console.ReadKey();
 

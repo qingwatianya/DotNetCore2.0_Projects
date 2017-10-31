@@ -38,7 +38,7 @@ namespace DotNetFrameWork_WindowsService_HangFire
                 //{                    
                 //BackgroundJob.Enqueue(() => FFF());
 
-                RecurringJob.AddOrUpdate(() => Fuck(), Cron.Minutely());
+                RecurringJob.AddOrUpdate(() => Test.Fork(), Cron.Minutely());
 
                 //}
             }
@@ -77,15 +77,7 @@ namespace DotNetFrameWork_WindowsService_HangFire
 
         }
 
-        public void Fuck()
-        {
-            string tmpConnection = "server=rds5n95035s53i40c6m5o.mysql.rds.aliyuncs.com;uid=qingwatianya;pwd=qingwatianya101674;database=mvctest;Allow User Variables=True";
-            MySql.Data.MySqlClient.MySqlConnection ff = new MySql.Data.MySqlClient.MySqlConnection(tmpConnection);
-            string tmpSql = string.Format("UPDATE Module_Description SET Module_URL='111{0}';", DateTime.Now.ToString());
-            ff.Execute(tmpSql);
-
-
-        }
+       
     }
 
 

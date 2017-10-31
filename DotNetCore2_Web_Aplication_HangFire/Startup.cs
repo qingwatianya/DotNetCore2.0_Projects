@@ -15,7 +15,7 @@ namespace DotNetCore2_Web_Aplication_HangFire
 {
     public class Startup
     {
-        readonly string tmpConnection = "server=rds5n95035s53i40c6m5o.mysql.rds.aliyuncs.com;uid=qingwatianya;pwd=qingwatianya101674;database=mvctest;Allow User Variables=True";
+        readonly string tmpConnection = "server=rds5n95035s53i40c6m5o.mysql.rds.aliyuncs.com;uid=qingwatianya;pwd=qingwatianya101674;database=hangfire;Allow User Variables=True";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,6 +26,7 @@ namespace DotNetCore2_Web_Aplication_HangFire
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddHangfire(x => x.UseStorage(new MySqlStorage(tmpConnection)));
             services.AddMvc();
         }              
