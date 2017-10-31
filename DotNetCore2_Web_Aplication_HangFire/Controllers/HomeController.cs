@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DotNetCore2_Web_Aplication_HangFire.Models;
+using Hangfire;
 
 namespace DotNetCore2_Web_Aplication_HangFire.Controllers
 {
@@ -32,6 +33,18 @@ namespace DotNetCore2_Web_Aplication_HangFire.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public string CreateJob()
+        {
+            RecurringJob.AddOrUpdate(() => Console.WriteLine("香菇蓝瘦"), Cron.Minutely());
+            RecurringJob.AddOrUpdate(() => HAHA(), Cron.Minutely());
+            return "What the fuck!";
+        }
+
+        public static void HAHA()
+        {
+
         }
     }
 }
