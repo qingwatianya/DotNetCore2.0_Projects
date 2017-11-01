@@ -37,8 +37,10 @@ namespace DotNetCore2_Web_Aplication_HangFire.Controllers
 
         public string CreateJob()
         {
-            RecurringJob.AddOrUpdate(() => Console.WriteLine("香菇蓝瘦"), Cron.Minutely());
-            RecurringJob.AddOrUpdate(() => HAHA(), Cron.Minutely());
+            
+            //RecurringJob.AddOrUpdate(() => Console.WriteLine("香菇蓝瘦"), Cron.Minutely());
+            //RecurringJob.AddOrUpdate(() => HAHA(), Cron.Minutely());
+            //RecurringJob.AddOrUpdate(() => DotNetFrameWork_Library.Class1.FuckStatic(), Cron.Minutely());
             return "What the fuck!";
         }
 
