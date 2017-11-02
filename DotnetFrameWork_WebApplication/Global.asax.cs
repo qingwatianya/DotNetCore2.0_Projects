@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Hangfire;
+using Hangfire.MySql.Core;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -11,6 +14,8 @@ namespace DotnetFrameWork_WebApplication
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            //string tmpConnection = ConfigurationManager.ConnectionStrings["mysqlconnstr_mvctest"].ConnectionString;
+            //GlobalConfiguration.Configuration.UseStorage(new MySqlStorage(tmpConnection));
         }
     }
 }
