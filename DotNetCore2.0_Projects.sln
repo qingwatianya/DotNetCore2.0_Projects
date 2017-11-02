@@ -41,7 +41,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFrameWork_Console_App
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSchedule", "JobSchedule\JobSchedule\JobSchedule.csproj", "{E1933E8C-1B27-4D75-8227-5CF5605ED885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetFrameWork_WebApplication", "DotnetFrameWork_WebApplication\DotnetFrameWork_WebApplication.csproj", "{C707118D-FA30-48B9-82DD-89698CCC805C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetFrameWork_WebApplication_HangFire", "DotnetFrameWork_WebApplication\DotnetFrameWork_WebApplication_HangFire.csproj", "{C707118D-FA30-48B9-82DD-89698CCC805C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore2_Console_Application_HangFire", "DotNetCore2_Console_Application_HangFire\DotNetCore2_Console_Application_HangFire.csproj", "{2ED671ED-34C9-473D-8276-BAE172226B59}"
 EndProject
