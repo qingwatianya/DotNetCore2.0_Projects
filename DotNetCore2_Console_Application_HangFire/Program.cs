@@ -13,7 +13,7 @@ namespace DotNetCore2_Console_Application_HangFire
         {
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("服务开始了！");
-            string tmpConnection = "server=rds5n95035s53i40c6m5o.mysql.rds.aliyuncs.com;uid=qingwatianya;pwd=qingwatianya101674;database=mvctest;Allow User Variables=True";
+            string tmpConnection = "server=rds5n95035s53i40c6m5o.mysql.rds.aliyuncs.com;uid=qingwatianya;pwd=qingwatianya101674;database=hangfire;Allow User Variables=True";
             GlobalConfiguration.Configuration
                .UseColouredConsoleLogProvider()
                .UseStorage(new MySqlStorage(tmpConnection));
@@ -34,8 +34,6 @@ namespace DotNetCore2_Console_Application_HangFire
                 RecurringJob.AddOrUpdate<Program>((Program) => Dosomething3(), Cron.Minutely());
                 //Console.WriteLine("Hangfire Server started. Press any key to exit...");
                 Console.ReadKey();
-
-
             }
 
         }

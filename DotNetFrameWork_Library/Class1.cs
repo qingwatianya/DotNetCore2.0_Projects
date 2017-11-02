@@ -10,12 +10,12 @@ namespace DotNetFrameWork_Library
     {
         public  void Fuck(string sss)
         {
-            
+            Console.WriteLine("Fire in the fuck："+ sss);
         }
 
         public static void FuckStatic()
         {
-
+            Console.WriteLine("Fire in the fuck!");
         }
     }
 }
