@@ -3,7 +3,6 @@
   <name>ApacheCordova_App</name>
   <description>使用 Apache Cordova 帮助生成面向 Android、iOS 和 Windows Universal Platform 等多个移动平台的应用的空白项目。</description>
   <author href="http://cordova.io" email="dev@cordova.apache.org">此处是你的名字</author>
-  <vs:is-from-base-template>true</vs:is-from-base-template>
   <vs:template-name>BlankJS</vs:template-name>
   <content src="index.html" />
   <access origin="*" />

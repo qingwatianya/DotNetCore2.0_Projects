@@ -1,4 +1,4 @@
-version: '3'
+version: '3.4'
 
 services:
   dotnetcore2.0_web_application_withdocker:
