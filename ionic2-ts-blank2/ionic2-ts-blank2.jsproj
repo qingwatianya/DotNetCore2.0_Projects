@@ -54,7 +54,7 @@
     <Service Include="{4a0dddb5-7a95-4fbf-97cc-616d07737a77}" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>58cbe3dc-16f1-4a9b-bd4d-21ef9a0434a3</ProjectGuid>
+    <ProjectGuid>aa595776-d4c6-4fc7-b37a-26cf8bed3040</ProjectGuid>
     <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -94,7 +94,7 @@
     <ExcludedItems>bin;bld;platforms;node_modules;simulation</ExcludedItems>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="**\**" Exclude="**\platforms\**;**\bin\**;**\bld\**;**\node_modules\**;**\simulation\**;.gitignore;ionic2-ts-blank1.*" />
+    <Content Include="**\**" Exclude="**\platforms\**;**\bin\**;**\bld\**;**\node_modules\**;**\simulation\**;.gitignore;ionic2-ts-blank2.*" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="config.xml">

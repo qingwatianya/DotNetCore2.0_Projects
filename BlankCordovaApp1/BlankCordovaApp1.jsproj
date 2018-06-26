@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Android">
       <Configuration>Debug</Configuration>
@@ -8,10 +8,6 @@
     <ProjectConfiguration Include="Debug|iOS">
       <Configuration>Debug</Configuration>
       <Platform>iOS</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Debug|Windows-AnyCPU">
-      <Configuration>Debug</Configuration>
-      <Platform>Windows-AnyCPU</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|Windows-x64">
       <Configuration>Debug</Configuration>
@@ -33,10 +29,6 @@
       <Configuration>Release</Configuration>
       <Platform>iOS</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Windows-AnyCPU">
-      <Configuration>Release</Configuration>
-      <Platform>Windows-AnyCPU</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Windows-x64">
       <Configuration>Release</Configuration>
       <Platform>Windows-x64</Platform>
@@ -50,20 +42,19 @@
       <Platform>Windows-ARM</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <Service Include="{4a0dddb5-7a95-4fbf-97cc-616d07737a77}" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>58cbe3dc-16f1-4a9b-bd4d-21ef9a0434a3</ProjectGuid>
-    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+    <ProjectGuid>688bdd79-0808-4b8e-8fcb-7d6fb6227c67</ProjectGuid>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectCapability Include="UseFileGlobs" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '15.0'">
     <VisualStudioVersion>15.0</VisualStudioVersion>
   </PropertyGroup>
   <PropertyGroup>
     <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
-    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\ApacheCordovaTools\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\ApacheCordovaTools\vs-mda-targets\Microsoft.MDA.FileMirroring.targets" />
@@ -83,18 +74,15 @@
   </Target>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties />
+      <UserProperties project_1json__JSONSchema="http://www.asp.net/media/4878834/project.json" />
     </VisualStudio>
   </ProjectExtensions>
-  <ItemGroup>
-    <ProjectCapability Include="UseFileGlobs" />
-  </ItemGroup>
   <PropertyGroup>
     <!-- Customize which folders are not shown by default -->
-    <ExcludedItems>bin;bld;platforms;node_modules;simulation</ExcludedItems>
+    <ExcludedItems>bin;bld;platforms;node_modules;simulation;plugins</ExcludedItems>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="**\**" Exclude="**\platforms\**;**\bin\**;**\bld\**;**\node_modules\**;**\simulation\**;.gitignore;ionic2-ts-blank1.*" />
+    <Content Include="**\**" Exclude="**\platforms\**;**\bin\**;**\bld\**;**\node_modules\**;**\simulation\**;**\plugins\**;.gitignore;BlankCordovaApp1.*" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="config.xml">
