@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="io.cordova.myapp91a7dc" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" xmlns:cdv="http://cordova.apache.org/ns/1.0" defaultLocale="zh-CN">
-  <name>ionic2-ts-blank2</name>
+<widget id="io.cordova.myapp91a7dc" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" xmlns:cdv="http://cordova.apache.org/ns/1.0" defaultLocale="zh-CN" android-versionCode="1">
+  <name>嘉益商务</name>
   <description>An Ionic Framework and Cordova project for Visual Studio</description>
-  <author email="vscordovatools@microsoft.com" href="http://taco.visualstudio.com">Visual Studio JS Mobile Tooling</author>
+  <author email="vscordovatools@microsoft.com" href="http://taco.visualstudio.com">放羊人</author>
   <content src="index.html" />
   <vs:toolsetVersion>6.3.1</vs:toolsetVersion>
-  <vs:template-name>Ionic 2 Blank</vs:template-name>
+  <vs:template-name>嘉益商务</vs:template-name>
   <access origin="*" />
   <allow-intent href="http://*/*" />
   <allow-intent href="https://*/*" />
@@ -95,4 +95,5 @@
   <plugin name="cordova-plugin-statusbar" spec="2.2.1" />
   <plugin name="cordova-plugin-device" spec="1.1.4" />
   <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
+  <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
 </widget>
