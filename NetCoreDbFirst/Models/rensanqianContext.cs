@@ -71,7 +71,7 @@ namespace NetCoreDbFirst.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseMySql("Server=39.104.53.125;User Id=qingwatianya;Password=qingwatianya101674;Database=rensanqian");
+                optionsBuilder.UseMySql("Server=39.104.;User Id=x;Password=x;Database=x");
             }
         }
 

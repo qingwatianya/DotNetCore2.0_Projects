@@ -13,7 +13,7 @@ namespace NetCoreCodeFirst_Console
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             
-            optionsBuilder.UseMySql("server=39.104.53.125;database=rensanqian;user=qingwatianya;password=qingwatianya101674;");
+            optionsBuilder.UseMySql("server=xxx;database=rensanqian;user=xxx;password=xxx;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
